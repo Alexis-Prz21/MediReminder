@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sintomaSecundario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#3c5177">
+
+        <!--Agregar el icono, al momento de agregarlo como las veces anteriores, no encuentra -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="295dp"
+            android:layout_height="52dp"
+            android:text="@string/sintomas"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.758"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btnBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515"
+            tools:src="@mipmap/BtnBack" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/degradado">
+
+        <!-- Opciones de instrucciones -->
+
+        <!-- Texto para instrucciones extra -->
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="200dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/instruccion_extra"
+            android:textColor="#7E7C7C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_antes_de_comer"
+            app:layout_constraintVertical_bias="0.809" />
+
+        <TextView
+            android:id="@+id/btn_antes_de_comer"
+            android:layout_width="407dp"
+            android:layout_height="155dp"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/presento_sintoma"
+            android:textColor="@android:color/white"
+
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.154" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/alarma_vibrante"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+            app:srcCompat="@mipmap/btnaprobado" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#3c5177">
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="206dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#223E69"
+            android:text="@string/seleccionar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
