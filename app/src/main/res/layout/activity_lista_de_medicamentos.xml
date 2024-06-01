@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModificarMedicamentoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/degradado">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="62dp"
+            android:layout_height="56dp"
+            android:background="?android:attr/windowSplashScreenIconBackgroundColor"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,ImageContrastCheck"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3c5177">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/degradado"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="551dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="226dp"
+            android:layout_height="55dp"
+            android:text="Lista de Medicamentos"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="26dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
