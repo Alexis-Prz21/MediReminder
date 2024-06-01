@@ -1,4 +1,37 @@
 <resources>
     <string name="app_name">ProyectoPDM2024-GT2-Grupo1-Tema</string>
     <string name="tercera_dosis">Seleccione la hora de la tercera dosis</string>
+
+    <!--Para vista de seleccion de la hora de la dosis-->
+    <string name="hora_dosis">Seleccione la hora de la dosis</string>
+    <string name="btnBack">Boton de regreso</string>
+    <string name="btnNext">Boton para la siguiente vista</string>
+    <string name="seleccionar">Seleccionar</string>
+
+    <!--Para la vista de instrucciones del medicamento -->
+    <string name="instruccion">Instrucciones del medicamento</string>
+    <string name="antes_comer">Antes de comer</string>
+    <string name="durante_comida">Durante la comida</string>
+    <string name="despues_comer">Después de comer</string>
+    <string name="al_despertar">Al despertarse</string>
+    <string name="antes_dormir">Antes de dormir</string>
+    <string name="ninguno">Ninguno</string>
+    <string name="instruccion_extra">¿Tiene alguna instrucción extra?</string>
+
+    <!--Para la presentaci[on de recordatorios -->
+    <string name="presentar_recordatorio">Seleccione la manera de presentar el recordatorio</string>
+    <string name="alarma_visual">Alarma visual</string>
+    <string name="alarma_sonora">Alarma sonora</string>
+    <string name="alarma_vibrante">Alarma vibrante</string>
+    <string name="txtViewmedicamento">TextView</string>
+    <!--Para vista de alarma visual -->
+    <string name="vista_alarma_visual">Se visualizara de la siguiente manera</string>
+    <string name="ingerir_medicamento">Ingerir: </string>
+
+    <!--Txt de vista para ingresar sintomas secundarios-->
+    <string name="sintomas">Se visualizara 20 minutos despues</string>
+    <string name="presento_sintoma"> ¿Presento algún sintoma secundario al ingerir?</string>
+    <string name="editText_sintoma"> No presente ningún sintoma</string>
+    <string name="guardar"> Guardar </string>
+
 </resources>

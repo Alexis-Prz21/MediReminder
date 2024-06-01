@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ProyectoPDM2024GT2Grupo1Tema"
         tools:targetApi="31">
         <activity
+            android:name=".sintomaSecundario"
+            android:exported="false" />
+        <activity
+            android:name=".alarmaVisual"
+            android:exported="false" />
+        <activity
+            android:name=".presentacionRecordatorio"
+            android:exported="false" />
+        <activity
+            android:name=".instrucciones"
+            android:exported="false" />
+        <activity
+            android:name=".hora_dosis"
+            android:exported="false" />
+        <activity
             android:name=".IntervaloSemanaActivity"
             android:exported="false" />
         <activity
