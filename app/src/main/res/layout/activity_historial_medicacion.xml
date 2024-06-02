@@ -35,13 +35,14 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:elevation="8dp"
-            app:layout_contraintBottom_toBottomOf="parent"
-            app:layout_contraintLeft_toLeftOf="parent"
-            app:layout_contraintRight_toRightOf="parent"
-            app:menu="@menu/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             app:labelVisibilityMode="selected" />
+        <!--            app:menu="@menu/menu"-->
+<!--        Lo de arriba estaba arriba de android:layout_alignParentLeft="true"-->
 
     </RelativeLayout>
 </LinearLayout>

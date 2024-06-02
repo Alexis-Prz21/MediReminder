@@ -42,8 +42,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.173"
-            app:srcCompat="@mipmap/BtnBack"
             tools:targetApi="s" />
+<!--        app:srcCompat="@mipmap/BtnBack"-->
+<!--        lo de arriba estaba arriba de tools target api pero daba error al compilar-->
 
         <ImageView
             android:id="@+id/imageView2"
