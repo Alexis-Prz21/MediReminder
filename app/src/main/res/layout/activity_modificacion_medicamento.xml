@@ -9,21 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="87dp"
         android:background="@drawable/degradado">
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="62dp"
-            android:layout_height="56dp"
-            android:background="?android:attr/windowSplashScreenIconBackgroundColor"
-            android:importantForAccessibility="no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.03"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="?attr/homeAsUpIndicator"
-            tools:ignore="MissingConstraints,TouchTargetSizeCheck,ImageContrastCheck"
-            tools:layout_editor_absoluteY="8dp" />
 
         <TextView
             android:id="@+id/textView"
@@ -36,10 +23,20 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.75"
+            app:layout_constraintVertical_bias="0.41"
             tools:ignore="TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icono_silueta"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="8dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -48,16 +45,186 @@
         android:layout_height="match_parent"
         android:background="#3c5177">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="336dp"
+            android:layout_height="508dp"
+            android:background="#66413D3D"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="44dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="181dp"
+                android:layout_height="30dp"
+                android:text="Acetaminofen"
+                android:textAlignment="center"
+                android:textColor="#7C7C7C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="187dp"
+                android:layout_height="33dp"
+                android:text="Cada ciertos días"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="420dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="187dp"
+                android:layout_height="33dp"
+                android:text="días específicos"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="187dp"
+                android:layout_height="33dp"
+                android:text="Cada ciertas semanas"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="452dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="151dp"
+                android:layout_height="42dp"
+                android:text="Cada día"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="346dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="224dp"
+                android:layout_height="26dp"
+                android:text="Días del tratamiento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="319dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="233dp"
+                android:layout_height="25dp"
+                android:text="Nombre del Medicamento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="15dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="161dp"
+                android:layout_height="27dp"
+                android:text="Recordatorios"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="73dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="228dp"
+                android:layout_height="29dp"
+                android:text="Duración del tratamiento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="194dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="181dp"
+                android:layout_height="26dp"
+                android:text="Calendarización"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="168dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="151dp"
+                android:layout_height="42dp"
+                android:buttonTint="@color/white"
+                android:text="En curso"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="FECHA EN TEXTO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="226dp"
+                android:layout_height="33dp"
+                android:text="Cantidad de días:"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="265dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/degradado"
+            android:backgroundTint="#223E69"
             android:text="Guardar Cambios"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="445dp" />
+            android:textColorLink="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>
