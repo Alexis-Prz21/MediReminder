@@ -4,6 +4,8 @@ import android.app.TimePickerDialog
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.TimePicker
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,15 +22,13 @@ class hora_dosis : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hora_dosis)
 
-        time = findViewById(R.id.time)
-        btnTime = findViewById(R.id.btnTime)
+        val timePicker = findViewById<TimePicker>(R.id.time_picker)
 
-        btnTime.setOnClickListener{
-            val currentTime = Calendar.getInstance()
-            val startHour = currentTime.get(Calendar.HOUR_OF_DAY)
-            val startMinute = currentTime.get(Calendar.MINUTE)
+        timePicker.setOnTimeChangedListener{ view, hourOfDay, minute ->
+            val seleccionarHora = hourOfDay
+            val seleccionarMinuto = minute
 
-            TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{ view, hourOfDay, minute -> time.setText("$hourOfDay : $minute") },startHour,startMinute,false).show()
+            Toast.makeText(this, "Hora seleccionada: $seleccionarHora:$seleccionarMinuto", Toast.LENGTH_SHORT).show()
         }
     }
 }

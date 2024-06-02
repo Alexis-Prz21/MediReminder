@@ -64,14 +64,14 @@
 
         <TimePicker
             android:id="@+id/date_picker"
-            android:theme="@style/TimePickerStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:calendarViewShown="false"
+            android:theme="@style/TimePickerStyle"
             android:timePickerMode="spinner"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="150dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="150dp" />
 
         <ImageButton
             android:id="@+id/imageButton2"

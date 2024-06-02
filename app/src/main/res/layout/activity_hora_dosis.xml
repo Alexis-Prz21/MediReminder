@@ -62,37 +62,6 @@
         android:layout_height="match_parent"
         android:background="#3c5177">
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="244dp"
-            android:layout_height="68dp"
-            android:text="Hora : Minutos"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textColorLink="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
-
-        <Button
-            android:id="@+id/btnTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#223E69"
-            android:text="@string/seleccionar"
-            android:textColorLink="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/time"
-            app:layout_constraintVertical_bias="0.499" />
-
         <ImageButton
             android:id="@+id/imageButton6"
             android:layout_width="wrap_content"
@@ -107,6 +76,19 @@
             android:background="?android:attr/windowSplashScreenIconBackgroundColor"
             android:contentDescription="@string/btnNext"
             tools:targetApi="s" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:theme="@style/TimePickerStyle"
+            android:timePickerMode="spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

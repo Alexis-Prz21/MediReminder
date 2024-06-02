@@ -11,7 +11,7 @@ class HoraPrimeraDosisActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hora_primera_dosis)
 
-        val timePicker = findViewById<TimePicker>(R.id.timePicker)
+        val timePicker = findViewById<TimePicker>(R.id.date_picker)
 
         timePicker.setOnTimeChangedListener{ view, hourOfDay, minute ->
             val seleccionarHora = hourOfDay
