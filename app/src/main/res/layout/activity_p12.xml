@@ -57,7 +57,7 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -69,13 +69,15 @@
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textEmailAddress"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:text="correo@correo.com"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -99,12 +101,14 @@
 
             <EditText
                 android:id="@+id/editTextTextPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:text="*********"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -115,9 +119,10 @@
             android:layout_marginLeft="50sp"
             android:layout_marginRight="50sp"
             android:layout_weight="1"
-            android:backgroundTint="#446CD4"
+            android:background="@drawable/degradado"
             android:gravity="center"
             android:text="Iniciar Sesión"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -148,7 +153,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="¿Aún no tienes una cuenta?"
-            android:textColor="#A4A4A4" />
+            android:textColor="#A4A4A4"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView33"
@@ -158,6 +164,7 @@
             android:gravity="center"
             android:text="Regístrate aquí"
             android:textColor="#A4A4A4"
+            android:textSize="14sp"
             android:textStyle="bold|italic" />
     </LinearLayout>
 
