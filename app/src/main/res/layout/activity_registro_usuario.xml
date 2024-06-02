@@ -83,13 +83,12 @@
             <EditText
                 android:id="@+id/editTextText3"
                 android:layout_width="275sp"
-                android:layout_height="wrap_content"
+                android:layout_height="54dp"
                 android:layout_weight="0"
                 android:background="#EFEDED"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Jhon"
-                android:textColor="#a4a4a4"
+                android:textColor="#605B5B"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -113,13 +112,12 @@
             <EditText
                 android:id="@+id/editTextText4"
                 android:layout_width="275sp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="0"
                 android:background="#EFEDED"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name"
-                android:textColor="#a4a4a4"
+                android:textColor="#605B5B"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -143,13 +141,12 @@
             <EditText
                 android:id="@+id/editTextText5"
                 android:layout_width="275sp"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:layout_weight="0"
                 android:background="#EFEDED"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name"
-                android:textColor="#a4a4a4"
+                android:inputType="number"
+                android:textColor="#605B5B"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -173,12 +170,12 @@
             <EditText
                 android:id="@+id/editTextTextEmailAddress2"
                 android:layout_width="275sp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="0"
                 android:background="#EFEDED"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textColor="#a4a4a4"
+                android:textColor="#605B5B"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -202,19 +199,19 @@
             <EditText
                 android:id="@+id/editTextTextPassword2"
                 android:layout_width="275sp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="0"
                 android:background="#EFEDED"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:textColor="#a4a4a4"
+                android:textColor="#605B5B"
                 android:textSize="16sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginLeft="96sp"
             android:layout_marginRight="96sp"
             android:background="@drawable/degradado"

@@ -22,13 +22,7 @@ class hora_dosis : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hora_dosis)
 
-        val timePicker = findViewById<TimePicker>(R.id.time_picker)
 
-        timePicker.setOnTimeChangedListener{ view, hourOfDay, minute ->
-            val seleccionarHora = hourOfDay
-            val seleccionarMinuto = minute
 
-            Toast.makeText(this, "Hora seleccionada: $seleccionarHora:$seleccionarMinuto", Toast.LENGTH_SHORT).show()
-        }
     }
 }

@@ -2,7 +2,6 @@
     <string name="app_name">ProyectoPDM2024-GT2-Grupo1-Tema</string>
     <string name="tercera_dosis">Seleccione la hora de la tercera dosis</string>
 
-<<<<<<< Updated upstream
     <!--Para vista de seleccion de la hora de la dosis-->
     <string name="hora_dosis">Seleccione la hora de la dosis</string>
     <string name="btnBack">Boton de regreso</string>
@@ -35,9 +34,7 @@
     <string name="editText_sintoma"> No presente ningún sintoma</string>
     <string name="guardar"> Guardar </string>
 
-</resources>
-=======
-    //String para las VISTAS 16 a 21----------------------------------------------------------------
+    <!--String para las VISTAS 16 a 21-->
     <string name="app_ingresarmedicamento">Ingrese el medicamento</string>
     <string name="app_nombremedicamento">Medicamento</string>
     <string name="app_formatomedicamento">Seleccione el formato del medicamento</string>
@@ -59,7 +56,5 @@
     <string name="app_intervalodias">Ingrese el intervalo de días de su dosis</string>
     <string name="app_selectItemdias">Intervalo días</string>
 
-    //String para las VISTAS 16 a 21----------------------------------------------------------------
 
 </resources>
->>>>>>> Stashed changes
