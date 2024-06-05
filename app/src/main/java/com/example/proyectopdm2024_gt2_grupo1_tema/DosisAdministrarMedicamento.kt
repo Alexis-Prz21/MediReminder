@@ -31,11 +31,19 @@ class DosisAdministrarMedicamento : AppCompatActivity() {
         }
         //------------------------------------------------------------------------------------------------------------
 
-        //Botón icono que envía a la vista atrás Seleccionar Frecuencia del Medicamento --------------------------------
-        val imageButton2 = findViewById<ImageButton>(R.id.btndosisatras)
+        //Botón icono que envía a la vista atrás Seleccionar Frecuencia del Medicamento ------------
+        val imageButton2 = findViewById<ImageButton>(R.id.btndosisadback)
         imageButton2.setOnClickListener {
             finish()
         }
+
+        //Botón icono que envía a la vista siguiente Hora Dosis-------------------------------------
+        val imageButton = findViewById<ImageButton>(R.id.btndosisadnext)
+        imageButton.setOnClickListener {
+            val intent = Intent(this,DosisHora::class.java)
+            startActivity(intent)
+        }
+        //------------------------------------------------------------------------------------------
 
 
 

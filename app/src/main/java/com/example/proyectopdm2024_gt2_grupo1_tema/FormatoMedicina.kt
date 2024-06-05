@@ -1,11 +1,14 @@
 package com.example.proyectopdm2024_gt2_grupo1_tema
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -47,6 +50,32 @@ class FormatoMedicina : AppCompatActivity() {
             startActivity(intent)
         }
         //------------------------------------------------------------------------------------------
+
+        /* Button de guardar formato
+        val btnGuardarFormato = findViewById<Button>(R.id.btnGuardarFormato)
+        btnGuardarFormato.setOnClickListener {
+            val selectedFormat = autoComplete.text.toString()
+            if (selectedFormat.isNotEmpty()) {
+                val sharedPref = getSharedPreferences("MedicamentoPref", Context.MODE_PRIVATE)
+                with(sharedPref.edit()) {
+                    putString("formato", selectedFormat)
+                    apply()
+                }
+                Toast.makeText(this, "Formato guardado", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Seleccione un formato", Toast.LENGTH_SHORT).show()
+            }
+        }*/
+
+        val btnGuardar = findViewById<Button>(R.id.btnGuardarFormato)
+        val autoComplete1= findViewById<AutoCompleteTextView>(R.id.auto_Complete)
+
+        btnGuardar.setOnClickListener {
+            val sharedPreferences = getSharedPreferences("MedData", MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putString("formato", autoComplete1.text.toString())
+            editor.apply()
+        }
 
 
 

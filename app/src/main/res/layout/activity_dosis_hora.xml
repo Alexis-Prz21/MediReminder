@@ -6,11 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#425077"
-    android:focusableInTouchMode="true"
-    tools:context=".sintomaSecundario">
+    tools:context=".DosisHora">
 
     <Button
-        android:id="@+id/btnGuardarMedAlarma"
+        android:id="@+id/btnGuardarDosisHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar"
@@ -18,14 +17,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintVertical_bias="0.649" />
 
-
+    <ImageButton
+        android:id="@+id/btnhoradosisnext"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:background="@drawable/icono_siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarInsertar"
-        android:layout_width="410dp"
-        android:layout_height="175dp"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
         android:background="@drawable/fondo_difuminado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +45,7 @@
 
 
     <ImageButton
-        android:id="@+id/btnsintomaback"
+        android:id="@+id/btnhoradosisback"
         android:layout_width="57dp"
         android:layout_height="59dp"
         android:background="@drawable/icono_casa"
@@ -60,63 +69,33 @@
         app:layout_constraintVertical_bias="0.707"
         app:srcCompat="@drawable/icono_medicamento" />
 
+
     <TextView
-        android:id="@+id/textViewFormato"
-        android:layout_width="249dp"
-        android:layout_height="59dp"
-        android:text="@string/sintomas"
-        android:textAlignment="center"
+        android:id="@+id/textViewIngrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_appDosisHora"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbarInsertar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintHorizontal_bias="0.751"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.649" />
 
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="299dp"
-        android:layout_height="102dp"
-        android:text="@string/presento_sintoma"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbarUnder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
-        app:layout_constraintVertical_bias="0.173" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="363dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="@string/instruccion_extra"
-        android:inputType="text"
-        android:textAlignment="center"
-        android:textColorHint="#7E7C7C"
-        app:layout_constraintBottom_toTopOf="@+id/toolbarUnder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
-        app:layout_constraintVertical_bias="0.507" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarUnder"
-        android:layout_width="410dp"
-        android:layout_height="161dp"
-        android:background="@drawable/fondo_difuminado"
+    <TimePicker
+        android:id="@+id/time_pickerdosis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:theme="@style/TimePickerStyle"
+        android:timePickerMode="spinner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

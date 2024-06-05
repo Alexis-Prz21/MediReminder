@@ -9,7 +9,7 @@
     tools:context=".DosisAdministrarMedicamento">
 
     <ImageButton
-        android:id="@+id/btndosisnext"
+        android:id="@+id/btndosisadnext"
         android:layout_width="61dp"
         android:layout_height="65dp"
         android:background="@drawable/icono_siguiente"
@@ -34,7 +34,7 @@
 
 
     <ImageButton
-        android:id="@+id/btndosisatras"
+        android:id="@+id/btndosisadback"
         android:layout_width="57dp"
         android:layout_height="59dp"
         android:background="@drawable/icono_casa"

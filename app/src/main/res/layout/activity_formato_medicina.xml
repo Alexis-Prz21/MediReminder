@@ -9,6 +9,17 @@
     android:focusableInTouchMode="true"
     tools:context=".FormatoMedicina">
 
+    <Button
+        android:id="@+id/btnGuardarFormato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
+        app:layout_constraintVertical_bias="0.348" />
+
     <ImageButton
         android:id="@+id/btnformatonext"
         android:layout_width="61dp"
@@ -75,6 +86,7 @@
         app:layout_constraintVertical_bias="0.706" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,11 +96,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
         app:layout_constraintVertical_bias="0.092">
+
         <AutoCompleteTextView
             android:id="@+id/auto_Complete"
-            android:hint="@string/app_selectItemformato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/app_selectItemformato"
             android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>

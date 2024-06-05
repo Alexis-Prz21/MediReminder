@@ -31,12 +31,20 @@ class IntervaloDias : AppCompatActivity() {
             val itemSelected = adapterView.getItemAtPosition(i)
             Toast.makeText(this, "Item: $itemSelected", Toast.LENGTH_SHORT).show()
         }
-        //---------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------
 
         //Botón icono que envía a la vista atrás Seleccionar la frecuencia administrada---------
         val imageButton2 = findViewById<ImageButton>(R.id.btnintervaloatras)
         imageButton2.setOnClickListener {
             finish()
+        }
+        //------------------------------------------------------------------------------------------
+
+        //Botón icono que envía a la vista siguiente Administrar Frecuencia de Dosis----------------
+        val imageButton = findViewById<ImageButton>(R.id.btnintervalonext)
+        imageButton.setOnClickListener {
+            val intent = Intent(this,DosisAdministrarMedicamento::class.java)
+            startActivity(intent)
         }
         //------------------------------------------------------------------------------------------
 

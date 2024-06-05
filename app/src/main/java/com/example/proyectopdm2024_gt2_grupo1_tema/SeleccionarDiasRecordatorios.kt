@@ -41,6 +41,14 @@ class SeleccionarDiasRecordatorios : AppCompatActivity(), MultipleChoiceDialogFr
         }
         //------------------------------------------------------------------------------------------
 
+        //Botón icono que envía a la vista siguiente Administrar Frecuencia de Dosis----------------
+        val imageButton = findViewById<ImageButton>(R.id.btnrecordatorionext)
+        imageButton.setOnClickListener {
+            val intent = Intent(this,DosisAdministrarMedicamento::class.java)
+            startActivity(intent)
+        }
+        //------------------------------------------------------------------------------------------
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

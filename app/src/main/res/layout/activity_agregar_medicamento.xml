@@ -8,6 +8,17 @@
     android:background="#425077"
     tools:context=".AgregarMedicamento">
 
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditMedi"
+        app:layout_constraintVertical_bias="0.141" />
+
     <ImageButton
         android:id="@+id/buttoningresarnext"
         android:layout_width="61dp"
@@ -34,7 +45,7 @@
 
 
     <ImageButton
-        android:id="@+id/iconobotonCasa"
+        android:id="@+id/btningresarback"
         android:layout_width="57dp"
         android:layout_height="59dp"
         android:background="@drawable/icono_casa"
@@ -75,10 +86,11 @@
 
     <EditText
         android:id="@+id/txtEditMedi"
-        android:layout_width="274dp"
-        android:layout_height="48dp"
+        android:layout_width="272dp"
+        android:layout_height="56dp"
         android:ems="8"
         android:hint="@string/app_nombremedicamento"
+        android:textColorHint="#7E7C7C"
         android:inputType="text"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

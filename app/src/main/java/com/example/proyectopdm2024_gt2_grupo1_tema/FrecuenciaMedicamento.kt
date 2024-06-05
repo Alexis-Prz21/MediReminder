@@ -38,6 +38,12 @@ class FrecuenciaMedicamento : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val button4 = findViewById<Button>(R.id.button4)
+        button4.setOnClickListener {
+            val intent = Intent(this,IntervaloSemanaActivity::class.java)
+            startActivity(intent)
+        }
+
         //--------------------------------------------------------------------------------
 
         //Botón icono que envía a la vista atrás Seleccionar el formato del medicamento-------------

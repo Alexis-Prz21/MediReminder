@@ -1,146 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#425077"
     tools:context=".alarmaVisual">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:background="#3c5177">
 
-        <!--Agregar el icono, al momento de agregarlo como las veces anteriores, no encuentra -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="191dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/alarma_icono" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="295dp"
-            android:layout_height="52dp"
-            android:text="@string/vista_alarma_visual"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.758"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.487"
-            tools:ignore="TextSizeCheck" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="ALARMA VISUAL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInsertar"
+        app:layout_constraintVertical_bias="0.131" />
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="62dp"
-            android:layout_height="58dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/btnBack"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.515"
-            tools:src="@mipmap/BtnBack" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="Ingerir Medicamento"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.082" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
+        android:background="@drawable/fondo_difuminado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:background="@drawable/degradado">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarunder"
+        android:layout_width="394dp"
+        android:layout_height="147dp"
+        android:background="@drawable/fondo_difuminado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <!-- Opciones de instrucciones -->
+    <ImageButton
+        android:id="@+id/btnalarmanext"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:background="@drawable/icono_siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/toolbarunder"
+        app:layout_constraintTop_toTopOf="@+id/toolbarunder"
+        app:layout_constraintVertical_bias="0.215" />
 
-        <!-- Texto para instrucciones extra -->
+    <ImageButton
+        android:id="@+id/btnalarmaback"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:background="@drawable/icono_casa"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarInsertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarInsertar"
+        app:layout_constraintVertical_bias="0.137" />
 
-        <TextView
-            android:id="@+id/paraMedicamento"
-            android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:background="?attr/selectableItemBackground"
+    <ImageView
+        android:id="@+id/iconoMedi"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarInsertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarInsertar"
+        app:layout_constraintVertical_bias="0.707"
+        app:srcCompat="@drawable/icono_medicamento" />
 
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="@string/txtViewmedicamento"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.231" />
 
-        <TextView
-            android:id="@+id/btn_antes_de_comer"
-            android:layout_width="414dp"
-            android:layout_height="73dp"
-            android:background="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="@string/ingerir_medicamento"
-            android:textColor="@android:color/white"
+    <TextView
+        android:id="@+id/textViewIngrese"
+        android:layout_width="233dp"
+        android:layout_height="63dp"
+        android:text="@string/vista_alarma_visual"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarInsertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
 
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.091" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="87dp"
-            android:layout_height="79dp"
-            android:layout_marginTop="184dp"
-            android:contentDescription="@string/seleccionar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.212"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/paraMedicamento"
-            app:layout_constraintVertical_bias="0.39"
-            app:srcCompat="@mipmap/btndenegado" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="84dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="184dp"
-            android:contentDescription="@string/alarma_vibrante"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.573"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/paraMedicamento"
-            app:layout_constraintVertical_bias="0.403"
-            app:srcCompat="@mipmap/btnaprobado" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:background="#3c5177">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/alarma_sonora"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.914"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/btnnext" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
